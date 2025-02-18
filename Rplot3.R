@@ -15,3 +15,5 @@ axis(1, at=pos_labels, labels=c("Thu", "Fri", "Sat"))
 legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col=c("black", "red", "blue"), lty=1, bty="n", 
        cex=0.5, y.intersp=0.7, inset=0.05)
+
+png("plot3.png", width = 480, height = 480)
