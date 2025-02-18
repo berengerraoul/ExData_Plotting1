@@ -14,3 +14,5 @@ donnees <- donnees[Date == "2007-02-01" | Date == "2007-02-02"]
 donnees[, datetime := as.POSIXct(paste(Date, Time), format="%Y-%m-%d %H:%M:%S")]
 
 hist(donnees$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active power (kilowatts)")
+
+png("plot1.png", width = 480, height = 480)
